@@ -13,4 +13,4 @@ function addNumbers(n1:number, n2:number, n3:number) {
   alert(msg);
 }
 
-addNumbers(num1, num2, lastName);
+addNumbers(num1, num2, 30);

@@ -9,4 +9,4 @@ function addNumbers(n1, n2, n3) {
     var msg = 'Sum is ' + result;
     alert(msg);
 }
-addNumbers(num1, num2, lastName);
+addNumbers(num1, num2, 30);

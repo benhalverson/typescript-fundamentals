@@ -15,3 +15,43 @@ var num3 = 3; //type inference (number)
 var num4 = num3 + 100; // type inference (number)
 var str1 = num + 'some string'; // Type inference(string)
 var wontwork: number = num1 + 'some string'; //error
+
+Dynamic and static typing
+Typescript: static typing is optional
+Javascript: Dynamic typing
+
+TypeScript: Type safety is a compile-time feature
+JavaScript: Type safety happens at run-time debugging
+
+JavaScript Dynamic Types example
+var person; // can be any type
+person = 'Ben Halverson';
+person.substring(1, 4);
+
+person = 1;
+person.substring(1, 4);
+//returns an error
+
+Ambient Declarations
+
+Typescript
+declare var document;
+document.title = "hello";
+//lib.d.ts is referenced by default and contains references for the DOM and
+Javascript
+
+Javascript
+document.title = "hello";
+Ambient Declarations do not appear anywhere in the Javascript
+
+
+
+Type Definition Files(aka Declaration source files)
+//works with external libs like jQuery
+Typescript
+/// <reference path="jquery.d.ts" />  // helps provide types for jQuery
+declare var $;
+var data = "Hello Ben";
+$("div").text(data);
+
+Javascript
