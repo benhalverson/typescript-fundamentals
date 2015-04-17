@@ -1,0 +1,17 @@
+Grammar: Type Inference
+
+In typescript
+var num = 2;
+num is typed as a number because 2 is a number. Typescript will automatically do the type checking
+
+var num: number = 2;
+This is a type annotations that specifically sets the type to a number.
+
+var any1; //could be any kind of type same as javascript
+
+var num1: number //type annotation
+var num2: number = 3; type annotation setting the value
+var num3 = 3; //type inference (number)
+var num4 = num3 + 100; // type inference (number)
+var str1 = num + 'some string'; // Type inference(string)
+var wontwork: number = num1 + 'some string'; //error
